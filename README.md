@@ -57,7 +57,37 @@ public class ProcessData {
 
 ## Installation
 
-### Via Claude Code Skills Directory
+### Via npx skills (Recommended)
+
+The easiest way to install these skills is using the `npx skills` CLI:
+
+```bash
+# Install individual skills
+npx skills install maxandersen/skills/zernio-cli
+npx skills install maxandersen/skills/prefer-jbang-automation
+
+# Or install all skills from this repo
+npx skills install maxandersen/skills
+```
+
+The CLI automatically:
+- Downloads skills to `~/.claude/skills/`
+- Handles updates and version management
+- Validates skill structure
+
+**Managing installed skills:**
+```bash
+# List installed skills
+npx skills list
+
+# Update a skill
+npx skills update zernio-cli
+
+# Remove a skill
+npx skills uninstall zernio-cli
+```
+
+### Via Manual Copy
 
 Copy skills to your Claude Code skills directory:
 
@@ -71,6 +101,8 @@ cp -r skills/prefer-jbang-automation ~/.claude/skills/
 ```
 
 ### Via Git Clone (Development)
+
+For skill development or customization:
 
 ```bash
 # Clone to your preferred location
@@ -120,5 +152,6 @@ MIT - See individual skill files for specific licensing information.
 
 - [Claude Code](https://claude.ai/code)
 - [Agent Skills Specification](https://agentskills.io/specification)
+- [Skills CLI](https://www.npmjs.com/package/skills) - Tool for installing agent skills
 - [Zernio CLI](https://docs.zernio.com/cli)
 - [JBang](https://www.jbang.dev)
