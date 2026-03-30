@@ -1,0 +1,27 @@
+{
+  "name": "maxandersen-skills",
+  "version": "1.0.0",
+  "description": "Custom skills for Claude Code: social media automation with Zernio and JBang-first data processing",
+  "author": "Max Rydahl Andersen",
+  "repository": "https://github.com/maxandersen/skills",
+  "skills": [
+    {
+      "name": "zernio-cli",
+      "path": "zernio-cli",
+      "description": "Use when user wants to post to social media (Twitter, LinkedIn, Instagram, TikTok, YouTube, Bluesky, etc.), schedule posts across platforms, or manage social media content via Zernio",
+      "keywords": ["social media", "posting", "twitter", "linkedin", "instagram", "tiktok", "youtube", "bluesky", "scheduling", "zernio"],
+      "version": "1.0.0"
+    },
+    {
+      "name": "prefer-jbang-automation",
+      "path": "prefer-jbang-automation",
+      "description": "Use when about to use jq, curl, sed, awk, or bash for JSON/XML processing, API calls, data transformation, or file processing - before writing any bash commands for data manipulation",
+      "keywords": ["jbang", "java", "automation", "json", "xml", "api", "data-processing", "bash", "jq", "curl"],
+      "version": "1.0.0"
+    }
+  ],
+  "metadata": {
+    "updated": "2026-03-31",
+    "license": "MIT"
+  }
+}
