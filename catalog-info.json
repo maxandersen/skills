@@ -18,6 +18,13 @@
       "description": "Use when about to use jq, curl, sed, awk, or bash for JSON/XML processing, API calls, data transformation, or file processing - before writing any bash commands for data manipulation",
       "keywords": ["jbang", "java", "automation", "json", "xml", "api", "data-processing", "bash", "jq", "curl"],
       "version": "1.0.0"
+    },
+    {
+      "name": "using-maven-worktrees",
+      "path": "using-maven-worktrees",
+      "description": "Use when creating git worktrees for Maven projects - prevents SNAPSHOT artifact clashes and corporate plugin resolution failures through isolated local repositories",
+      "keywords": ["maven", "git", "worktrees", "java", "snapshot", "isolation", "local-repository", "mvn"],
+      "version": "1.0.0"
     }
   ],
   "metadata": {
