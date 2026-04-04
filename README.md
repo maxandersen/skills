@@ -2,6 +2,11 @@
 
 This repository contains custom skills for [Claude Code](https://claude.ai/code) to enhance development workflows.
 
+Simplest install for claude code and all that supports .agents:
+
+`npx skills install maxandersen/skills --agent claude`
+
+
 ## Skills
 
 ### [zernio-cli](./zernio-cli)
@@ -23,6 +28,26 @@ npx @zernio/cli posts:create \
   --text "Your message here" \
   --accounts account-id-1,account-id-2 \
   --draft
+```
+
+### [gh-token](./gh-token)
+
+Create a fine-grained GitHub personal access token scoped to exactly what a task needs, using `gh` CLI — no GitHub web UI required.
+
+**Use when:** User wants to create a GitHub fine-grained PAT for CI secrets, ecosystem-ci, workflow triggers, package publishing, or any other scoped access
+
+**Key features:**
+- Maps tasks to minimal permissions (principle of least privilege)
+- Prefers single-repo scope over org-wide
+- Enforces max 180-day expiry with sensible defaults per use case
+- Warns on anti-patterns (classic PATs, over-permissioned tokens, plaintext storage)
+- Suggests matching `permissions:` block for GitHub Actions workflows
+
+**Example use:**
+```
+/gh-token ecosystem-ci for quarkiverse/quarkus-solr
+/gh-token trigger workflows in myorg/myrepo
+/gh-token publish maven packages to quarkiverse
 ```
 
 ### [prefer-jbang-automation](./prefer-jbang-automation)
@@ -65,6 +90,7 @@ The easiest way to install these skills is using the `npx skills` CLI:
 # Install individual skills
 npx skills install maxandersen/skills/zernio-cli
 npx skills install maxandersen/skills/prefer-jbang-automation
+npx skills install maxandersen/skills/gh-token
 
 # Or install all skills from this repo
 npx skills install maxandersen/skills
@@ -87,30 +113,19 @@ npx skills update zernio-cli
 npx skills uninstall zernio-cli
 ```
 
-### Via Manual Copy
-
-Copy skills to your Claude Code skills directory:
-
-```bash
-# Clone this repo
-git clone https://github.com/maxandersen/skills.git
-
-# Copy to Claude Code skills directory
-cp -r skills/zernio-cli ~/.claude/skills/
-cp -r skills/prefer-jbang-automation ~/.claude/skills/
-```
-
 ### Via Git Clone (Development)
 
 For skill development or customization:
 
 ```bash
 # Clone to your preferred location
-git clone https://github.com/maxandersen/skills.git ~/my-skills
+git clone https://github.com/maxandersen/skills.git
+cd skills
 
 # Symlink to Claude Code skills directory
-ln -s ~/my-skills/zernio-cli ~/.claude/skills/zernio-cli
-ln -s ~/my-skills/prefer-jbang-automation ~/.claude/skills/prefer-jbang-automation
+ln -s $(pwd)/zernio-cli ~/.claude/skills/zernio-cli
+ln -s $(pwd)/prefer-jbang-automation ~/.claude/skills/prefer-jbang-automation
+ln -s $(pwd)/gh-token ~/.claude/skills/gh-token
 ```
 
 ## Usage
