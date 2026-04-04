@@ -2,10 +2,11 @@
 
 This repository contains custom skills for [Claude Code](https://claude.ai/code) to enhance development workflows.
 
-Simplest install for claude code and all that supports .agents:
+Simplest install to install globally:
 
-`npx skills install maxandersen/skills --agent claude`
+`npx skills install maxandersen/skills -g`
 
+See the [Installation](#installation) section below for further details.
 
 ## Skills
 
@@ -97,7 +98,7 @@ npx skills install maxandersen/skills
 ```
 
 The CLI automatically:
-- Downloads skills to `~/.claude/skills/`
+- Downloads skills to `~/.agents/skills/`
 - Handles updates and version management
 - Validates skill structure
 
@@ -144,12 +145,6 @@ Claude: [Uses prefer-jbang-automation skill to create JBang script]
 
 These skills follow the [Agent Skills Specification](https://agentskills.io/specification) and best practices from the `superpowers:writing-skills` workflow.
 
-### Skill Structure
-
-Each skill contains:
-- `SKILL.md` - Main reference with frontmatter metadata
-- Supporting files (if needed) - Scripts, examples, tools
-
 ### Testing
 
 Skills should be tested before deployment following TDD principles:
@@ -161,7 +156,7 @@ See [superpowers:writing-skills](https://github.com/anthropics/claude-code) for 
 
 ## License
 
-MIT - See individual skill files for specific licensing information.
+MIT 
 
 ## Links
 
