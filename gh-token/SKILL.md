@@ -152,17 +152,3 @@ permissions:
 
 Remind the user that `permissions:` in the workflow overrides the org default, so this works regardless of org settings.
 
-### 8. Optionally offer computer-assisted form filling
-
-**Always show the manual URL + settings table first (steps 4 above). Never skip this.**
-
-After showing the manual steps, if computer-use or browser automation tools appear to be available in the session (e.g. `mcp__computer-use__*`, `mcp__Claude_in_Chrome__*`), you may offer — but never assume — to fill the form on the user's behalf:
-
-> "I also have browser tools available. Want me to open the form and pre-fill the settings for you to review before you click Generate?"
-
-Only proceed if the user explicitly says yes. When filling the form:
-1. Navigate to the prefill URL
-2. Fill each field per the settings table
-3. Take a screenshot and show the user the completed form
-4. **Stop before clicking Generate** — the user must click that themselves
-5. Remind them to copy the token immediately after generation
