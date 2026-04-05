@@ -74,6 +74,6 @@ Combine: "in:inbox is:unread from:boss@company.com"
 
 ## Data Storage
 
-- `~/.jgmcli/credentials.json` - OAuth client credentials
-- `~/.jgmcli/accounts.json` - Account tokens
-- `~/.jgmcli/attachments/` - Downloaded attachments
+- `~/.jgcli/credentials.json` - OAuth client credentials (shared with jgccli, jgdcli)
+- `~/.jgcli/accounts-gmail.json` - Account tokens
+- `~/.jgcli/attachments/` - Downloaded attachments

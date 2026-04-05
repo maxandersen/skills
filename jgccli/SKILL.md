@@ -69,5 +69,5 @@ Use `primary` as calendarId for the main calendar.
 
 ## Data Storage
 
-- `~/.jgccli/credentials.json` - OAuth client credentials
-- `~/.jgccli/accounts.json` - Account tokens
+- `~/.jgcli/credentials.json` - OAuth client credentials (shared with jgmcli, jgdcli)
+- `~/.jgcli/accounts-calendar.json` - Account tokens

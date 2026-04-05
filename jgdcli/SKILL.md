@@ -105,6 +105,6 @@ Ref: https://developers.google.com/drive/api/guides/ref-search-terms
 
 ## Data Storage
 
-- `~/.jgdcli/credentials.json` - OAuth client credentials
-- `~/.jgdcli/accounts.json` - Account tokens
-- `~/.jgdcli/downloads/` - Default download location
+- `~/.jgcli/credentials.json` - OAuth client credentials (shared with jgccli, jgmcli)
+- `~/.jgcli/accounts-drive.json` - Account tokens
+- `~/.jgcli/downloads/` - Default download location
