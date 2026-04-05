@@ -72,6 +72,15 @@ Common operations:
 
 Use `primary` as calendarId for the main calendar.
 
+## Attendees
+
+```bash
+# Required and optional attendees
+jgccli create <email> primary --summary "Meeting" --start <dt> --end <dt> \
+    --attendees required@x.com,also@x.com \
+    --optional-attendees maybe@x.com,fyi@x.com
+```
+
 ## Date/Time Format
 
 - Timed events: `YYYY-MM-DDTHH:MM:SSZ` (UTC) or `YYYY-MM-DDTHH:MM:SS` (local)
