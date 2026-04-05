@@ -49,6 +49,16 @@ If no accounts, guide the user through setup:
 4. Run: `jgdcli accounts credentials ~/path/to/credentials.json`
 5. Run: `jgdcli accounts add <email>` (use `--manual` for browserless OAuth)
 
+### Shared Credentials
+
+Credentials in `~/.jgcli/` are **shared across jgccli, jgmcli, and jgdcli**. Set up once, use with all three.
+
+For separate credentials, use named credentials:
+```bash
+jgdcli accounts credentials ~/work-creds.json --name work
+jgdcli accounts add work@company.com --credentials work
+```
+
 ## Usage
 
 Run `jgdcli --help` for full command reference.
