@@ -1,6 +1,6 @@
-# Max's Skills for Claude Code
+# Max's Skills for Coding Agents/Harnesses
 
-This repository contains custom skills for [Claude Code](https://claude.ai/code) to enhance development workflows.
+This repository contains custom skills I've used with [Claude Code](https://claude.ai/code), [pi](https://pi.dev) and [bob](https://bob.ibm.com) to enhance my development workflows.
 
 Simplest install to install globally:
 
