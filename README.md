@@ -81,6 +81,35 @@ public class ProcessData {
 }
 ```
 
+## JBang Catalog
+
+This repository also provides a JBang catalog with Google API CLI tools:
+
+| Alias | Description |
+|-------|-------------|
+| `jgccli` | Minimal Google Calendar CLI (Java) |
+| `jgmcli` | Minimal Gmail CLI (Java) |
+| `jgdcli` | Minimal Google Drive CLI (Java) |
+
+**Run directly:**
+```bash
+jbang jgccli@maxandersen/skills --help
+jbang jgmcli@maxandersen/skills --help
+jbang jgdcli@maxandersen/skills --help
+```
+
+**Install as commands:**
+```bash
+jbang app install jgccli@maxandersen/skills
+jbang app install jgmcli@maxandersen/skills
+jbang app install jgdcli@maxandersen/skills
+
+# Then use directly
+jgccli accounts list
+jgmcli search you@gmail.com "in:inbox"
+jgdcli ls you@gmail.com
+```
+
 ## Installation
 
 ### Via npx skills (Recommended)

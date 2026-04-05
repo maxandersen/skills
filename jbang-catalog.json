@@ -1,0 +1,17 @@
+{
+  "catalogs": {},
+  "aliases": {
+    "jgccli": {
+      "script-ref": "https://github.com/maxandersen/jgccli/blob/main/src/main/java/jgccli.java",
+      "description": "Minimal Google Calendar CLI (Java)"
+    },
+    "jgmcli": {
+      "script-ref": "https://github.com/maxandersen/jgmcli/blob/main/src/main/java/jgmcli.java",
+      "description": "Minimal Gmail CLI (Java)"
+    },
+    "jgdcli": {
+      "script-ref": "https://github.com/maxandersen/jgdcli/blob/main/src/main/java/jgdcli.java",
+      "description": "Minimal Google Drive CLI (Java)"
+    }
+  }
+}
