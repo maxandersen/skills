@@ -1,7 +1,7 @@
 {
   "name": "maxandersen-skills",
-  "version": "1.0.0",
-  "description": "Custom skills for Claude Code: social media automation with Zernio and JBang-first data processing",
+  "version": "1.1.0",
+  "description": "Custom skills for Claude Code: Google API CLIs, social media automation with Zernio, and JBang-first data processing",
   "author": "Max Rydahl Andersen",
   "repository": "https://github.com/maxandersen/skills",
   "skills": [
@@ -24,6 +24,27 @@
       "path": "using-maven-worktrees",
       "description": "Use when creating git worktrees for Maven projects - prevents SNAPSHOT artifact clashes and corporate plugin resolution failures through isolated local repositories",
       "keywords": ["maven", "git", "worktrees", "java", "snapshot", "isolation", "local-repository", "mvn"],
+      "version": "1.0.0"
+    },
+    {
+      "name": "jgccli",
+      "path": "jgccli",
+      "description": "Google Calendar CLI (Java) for listing calendars, viewing/creating/updating events, and checking availability",
+      "keywords": ["google", "calendar", "gcal", "events", "scheduling", "java", "jbang"],
+      "version": "1.0.0"
+    },
+    {
+      "name": "jgmcli",
+      "path": "jgmcli",
+      "description": "Gmail CLI (Java) for searching emails, reading threads, sending messages, managing drafts, and handling labels/attachments",
+      "keywords": ["google", "gmail", "email", "search", "send", "drafts", "labels", "java", "jbang"],
+      "version": "1.0.0"
+    },
+    {
+      "name": "jgdcli",
+      "path": "jgdcli",
+      "description": "Google Drive CLI (Java) for listing, searching, uploading, downloading, and sharing files and folders",
+      "keywords": ["google", "drive", "files", "upload", "download", "share", "java", "jbang"],
       "version": "1.0.0"
     }
   ],

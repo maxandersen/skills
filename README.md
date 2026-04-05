@@ -10,6 +10,30 @@ See the [Installation](#installation) section below for further details.
 
 ## Skills
 
+### [jgccli](./jgccli)
+
+Google Calendar CLI (Java) - manage calendars, events, and availability.
+
+**Use when:** User wants to list calendars, create/update/delete events, check free/busy status, or manage calendar ACLs.
+
+**Installation:** `jbang app install jgccli@maxandersen/skills`
+
+### [jgmcli](./jgmcli)
+
+Gmail CLI (Java) - search, read, send emails and manage drafts.
+
+**Use when:** User wants to search emails, read threads, send messages, manage drafts, or handle labels/attachments.
+
+**Installation:** `jbang app install jgmcli@maxandersen/skills`
+
+### [jgdcli](./jgdcli)
+
+Google Drive CLI (Java) - manage files and folders.
+
+**Use when:** User wants to list, search, upload, download, or share files in Google Drive.
+
+**Installation:** `jbang app install jgdcli@maxandersen/skills`
+
 ### [zernio-cli](./zernio-cli)
 
 Social media posting and scheduling via Zernio CLI.
