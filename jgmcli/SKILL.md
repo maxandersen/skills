@@ -7,6 +7,8 @@ description: Gmail CLI (Java) for searching emails, reading threads, sending mes
 
 Command-line interface for Gmail operations. Java port of [gmcli](https://github.com/badlogic/pi-skills/tree/main/gmcli).
 
+**Source:** https://github.com/maxandersen/jgmcli
+
 ## Installation
 
 **Option 1: Run directly with JBang (no install)**

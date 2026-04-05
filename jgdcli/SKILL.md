@@ -7,6 +7,8 @@ description: Google Drive CLI (Java) for listing, searching, uploading, download
 
 Command-line interface for Google Drive operations. Java port of [gdcli](https://github.com/badlogic/pi-skills/tree/main/gdcli).
 
+**Source:** https://github.com/maxandersen/jgdcli
+
 ## Installation
 
 **Option 1: Run directly with JBang (no install)**

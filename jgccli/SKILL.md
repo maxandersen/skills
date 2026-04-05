@@ -5,7 +5,9 @@ description: Google Calendar CLI (Java) for listing calendars, viewing/creating/
 
 # Google Calendar CLI (Java)
 
-Command-line interface for Google Calendar operations. Java port of [gccli](https://github.com/badlogic/pi-skills/tree/main/gccli).
+Command-line interface for Google Calendar operations. Java port of [gccli](https://github.com/badlogic/pi-skills/tree/main/gmcli).
+
+**Source:** https://github.com/maxandersen/jgccli
 
 ## Installation
 
