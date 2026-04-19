@@ -34,6 +34,24 @@ Google Drive CLI (Java) - manage files and folders.
 
 **Installation:** `jbang app install jgdcli@maxandersen/skills`
 
+### [jreleaser](./jreleaser)
+
+Set up JReleaser for releasing projects to GitHub with minimal config.
+
+**Use when:** Setting up JReleaser for a project, creating `jreleaser.yml`, or adding GitHub Actions release workflows
+
+**Key features:**
+- Two clear patterns: native binary (Go, Rust, Zig, C#, Deno, Swift, etc.) and Java
+- Proven configs from 20+ helloworld template repos in the `jreleaser` GitHub org
+- Both release and early-access GitHub Actions workflows
+- Defers complex features (package managers, signing, deploy) to docs via `markdown.new`
+
+**Example use:**
+```bash
+# Fetch the proven config for your language
+curl -s https://raw.githubusercontent.com/jreleaser/helloworld-go/main/jreleaser.yml
+```
+
 ### [zernio-cli](./zernio-cli)
 
 Social media posting and scheduling via Zernio CLI.

@@ -1,7 +1,7 @@
 {
   "name": "maxandersen-skills",
   "version": "1.1.0",
-  "description": "Custom skills for Claude Code: Google API CLIs, social media automation with Zernio, and JBang-first data processing",
+  "description": "Custom skills for Claude Code: JReleaser releases, Google API CLIs, social media automation with Zernio, and JBang-first data processing",
   "author": "Max Rydahl Andersen",
   "repository": "https://github.com/maxandersen/skills",
   "skills": [
@@ -17,6 +17,13 @@
       "path": "prefer-jbang-automation",
       "description": "Use when about to use jq, curl, sed, awk, or bash for JSON/XML processing, API calls, data transformation, or file processing - before writing any bash commands for data manipulation",
       "keywords": ["jbang", "java", "automation", "json", "xml", "api", "data-processing", "bash", "jq", "curl"],
+      "version": "1.0.0"
+    },
+    {
+      "name": "jreleaser",
+      "path": "jreleaser",
+      "description": "Configure JReleaser to release projects to GitHub — supports Go, Rust, Java, Zig, C#, Deno, Swift, and 20+ languages. Creates jreleaser.yml and GitHub Actions workflows from proven templates.",
+      "keywords": ["jreleaser", "release", "github", "ci-cd", "packaging", "distribution", "github-actions"],
       "version": "1.0.0"
     },
     {
